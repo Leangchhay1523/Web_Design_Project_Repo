@@ -604,10 +604,9 @@ hr{
 button:hover{
     background-color: #45a049;
 }
-<<<<<<< HEAD
 button:active{
     background-color: #318235;
-=======
+
 /* Main : About Us */
 
 main.about-us-page{
@@ -1140,5 +1139,4 @@ p.saved-products-price{
     align-items: center;
     padding: 5px;
     font-size: 1.2em;
->>>>>>> de34f75f33eb04286c75c6dcc40e3a93d44c5394
 }
