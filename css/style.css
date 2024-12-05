@@ -328,6 +328,10 @@ body{
     font-weight: bold;
 }
 
+main.cart-page{
+  font-family: var(--primaryFont);
+}
+
 .cart-container {
     display: flex;
     flex-direction: column;
@@ -336,7 +340,8 @@ body{
     margin: auto;
 }
 h2 {
-    margin: 20px 0;
+    margin: 20px 0px;
+    font-size: 28px;
 }
 .cart-content {
     display: flex;
@@ -368,6 +373,7 @@ h3{
 .header-line {
     font-weight: bold;
     text-align: left;
+    font-size: 1.2em;
 }
 .center-header{
     font-weight: bold;
@@ -383,6 +389,21 @@ h3{
     align-items: center;
     gap: 5px;
 }
+
+.quantity-control div{
+  width: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.quantity-control div:hover{
+  cursor: pointer;
+}
+.quantity-control div:active{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .quantity-control input {
     width: 50px;
     text-align: center;
@@ -404,6 +425,7 @@ h3{
     padding-left: 20px;
     max-width: 300px; 
     text-overflow: clip;
+    font-weight: bold;
 }
 /*right*/
 .Cart-Total{
@@ -460,8 +482,8 @@ hr{
 }
 
 button:hover{
-    background-color: #45a049;
+    background-color: #1c413b;
 }
 button:active{
-    background-color: #318235;
+    background-color: #1a3b35;
 }

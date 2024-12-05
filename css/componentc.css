@@ -218,7 +218,7 @@ nav a:hover {
   
 .saved-circle .change {
     font-size: 20px;
-    color: red;
+    color: #F2D07D;
     display: none;
     cursor: pointer;
 }
@@ -373,7 +373,6 @@ main.products {
 }
 
 .saved-circle {
-  border-radius: 50%;
   background-color: #d9d9d9;
   width: 30px;
   height: 30px;
@@ -381,9 +380,7 @@ main.products {
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
-  position: absolute;
-  top: 40%;
-  left: 8%;
+  margin-bottom: 1px;
 }
 
 .add-to-cart-btn {
@@ -445,13 +442,9 @@ main.products {
     cursor: pointer;
     border: none;
 }
-<<<<<<< HEAD
 .add-to-cart-btn:active{
     background-color: rgb(116, 106, 106);
     color: white;
     cursor: pointer;
     border: none;
 }
-=======
-
->>>>>>> de34f75f33eb04286c75c6dcc40e3a93d44c5394
