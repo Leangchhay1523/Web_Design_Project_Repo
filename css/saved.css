@@ -1,0 +1,92 @@
+:root{
+    --mainFont: Inria-Serif;
+    --primaryFont: Inter;
+    --mainCol: #1F4A42;
+    --primaryCol: #F2D07D;
+    --lightGray: #F3F3F3;
+    --Gray: #87888B;
+    --dark: #3E3F42;
+}
+/* General Style */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main : Save Page */
+main.save-page{
+    font-family: var(--primaryFont);
+    padding: 10px 30px;
+}
+
+.save-page-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.save-page-title{
+    font-size: 28px;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.save-page-products-container{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.saved-products{
+    width: 200px;
+    height: 370px;
+}
+
+.save-products-picture{
+    width: 100%;
+    height: 80%;
+}
+
+p.saved-products-price{
+    font-weight: bold;
+}
+
+.saved-products-tools{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.saved-products-add-to-cart{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saved-products-add-to-cart:hover{
+    background-color: var(--Gray);
+    color: white;
+    cursor: pointer;
+}
+
+.saved-products-add-to-cart:active{
+    background-color: rgb(119, 119, 119);
+    color: white;
+    cursor: pointer;
+}
+
+.saved-products-save-icon{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.2em;
+}
