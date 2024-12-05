@@ -50,19 +50,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
 </head>
-<div>
-    <div class="cart-page product">
+<body>
+    <main class="cart-page product">
         <div class="cart-container">
-            <h2>Your Cart</h2>
+            <h2>My Cart</h2>
             <div class="cart-content">
-                <div class="product-list">
+                <div class="product-list left">
                     <div class="header-line">
                         <div>Product</div>
                         <div class="center-header">Quantity</div>
                         <div class="center-header">Price</div>
                         <div class="center-header">Total</div>
                     </div>
-
                     <div class="product-item">
                         <div class="product-name-container">
                             <img class="product-image" src="/Images/cartImages/productmain.webp" alt="Product Image">
@@ -71,7 +70,6 @@
                                 <div class="infor-item">color: </div>
                                 <div class="infor-item">Size: XL</div>
                             </div>
-
                         </div>
                         <div class="quantity-control">
                             <button>-</button>
@@ -89,7 +87,6 @@
                                 <div class="infor-item">color: </div>
                                 <div class="infor-item">Size: XL</div>
                             </div>
-
                         </div>
                         <div class="quantity-control">
                             <button>-</button>
@@ -107,7 +104,6 @@
                                 <div class="infor-item">color: </div>
                                 <div class="infor-item">Size: XL</div>
                             </div>
-
                         </div>
                         <div class="quantity-control">
                             <button>-</button>
@@ -118,41 +114,45 @@
                         <div>$50.00</div>
                     </div>
                 </div>
-                
-                <!-- Right Column: Receipt -->
-                <div class="right-bar">
+                <div class="line"></div>
+                    <!-- Right Column: Receipt -->
+                <div class="right-bar right">
                     <div class="Cart-Total">
-                        <h3>Cart Total</h3>
-                        <div class="Total-column">
-                            <div>Subtotal:</div>
+                        <div class="total-row">
+                            <h3>Cart Total</h3>
                         </div>
-                        <div>$220.98</div>
-                        <div class="total-row1">
+                        <div class="total-row">
+                            <div>Subtotal:</div>
+                            <div>$110.00</div>
+                        </div>
+                        <hr>
+                        <div class="total-row">
                             <div>Delivery:</div>
                             <div>$5.00</div>
                         </div>
-                        <div class="item-list">
-                            <div>Item Lists: </div>
-                            <div class="total-row">
+                        <hr>
+                        <div>Item Lists: </div>
+                        <div class="total-row">
                             <div>Item 1:</div>
                             <div>$50.00</div>
                         </div>
                         <div class="total-row">
-                          <div>Item 2:</div>
-                          <div>$60.00</div>
+                            <div>Item 2:</div>
+                            <div>$60.00</div>
                         </div>
-                        </div>
-                        <hr> <!-- Gray line separator -->
-                        <div class="total-row">
-                            <h4>Total:</h4>
-                            <h4>$115.00</h4>
-                        </div>
-                        <button>Checkout</button>
                     </div>
+                    <hr>
+                    <div class="Total-all">
+                        <div class="total-row last">
+                            <h4 style="font-size: 25px;font-family: Inter;font-weight:400;">Total:</h4>
+                            <h4 style="font-size: 25px;">$115.00</h4>
+                        </div>
+                    </div>
+                    <a href="payment.html"><button class="button-pay">Checkout</button></a>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
 
