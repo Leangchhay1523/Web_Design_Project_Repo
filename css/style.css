@@ -44,19 +44,20 @@ h2 {
     width: 100%;
     margin: 20px 0;
 }
-.product-list {
+.product-list   {
     width: 70%;
+}
+.left{
+    margin-right: 20px;
+}
+.right{
+    margin-left: 20px;
 }
 
 h3{
     font-family: Inter;
 }
-.Cart-Total{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #F2D07D;
-    height: auto;
-}
+
 .header-line, .product-item {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
@@ -105,52 +106,63 @@ h3{
     max-width: 300px; 
     text-overflow: clip;
 }
+/*right*/
+.Cart-Total{
+    display: grid;
+    grid-template-rows: 50px 30px 30px repeat(4,30px) 1fr;
+    height: auto;
+    
+}
+.line {
+    width: 1px;
+    background-color: lightgrey;
+    height: 700px;
+}
 
 .right-bar {
-    width: 300px;
-    padding: 20px; 
+    width: 300px; /* Adjust width as necessary */
+    height: 400px;
+    padding: 20px;
+    
+    background-color:#F2D07D;
 }
+
 .Cart-Total h3 {
     margin-bottom: 20px;
 }
-.Total-column {
+
+.total-row {
     display: flex;
-    text-align: left;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.total-row1 {
-    display: flex;
-    justify-content: space-between;
+.Total-all{
+    padding-top: 30px;
+}
+.last{
     margin-bottom: 30px;
 }
-.total-row div{
-    width: 45%;
-    text-align: left;
+hr{
+    border: 1px solid #F3EAD6;
+    width: 100%;
+    height: 0;
+    margin-top: 10px; 
 }
 
-.item-list .total-row div {
-    text-align: left;
-    width: 80%;
-}
-
-hr {
-    border: 1px solid #ccc;
-    margin: 20px 0;
-}
-
-button .last-button{
+.button-pay {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #1F4A42;
+    color: #F2D07D;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
 
-button:hover {
+button:hover{
     background-color: #45a049;
+}
+button:active{
+    background-color: #318235;
 }
