@@ -1,5 +1,5 @@
-footer {
-  margin-top: 950px;
+footer{
+    margin-top: 30px;
 }
 .advertise-text-run {
   background-color: var(--primaryCol);
@@ -11,83 +11,148 @@ footer {
   font-weight: bold;
 }
 
-/*SignUP Page*/
-.signUp-container {
-  width: 700px;
-  border: 1px solid;
-  display: grid;
-  grid-template-columns: 350px 350px;
-  margin-left: 650px;
-  margin-top: 200px;
-}
-.logo-description {
-  background: #f2d07d;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#login-btn {
-  margin-bottom: 90px;
-  background-color: #1f4a42;
-  color: white;
-}
-
-.signUp-form {
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-  row-gap: 15px;
-}
-.signUp-form h2 {
-  margin-left: 70px;
-  font-size: 40px;
-  margin-top: 15px;
-}
-input[type="text"] {
-  height: 30px;
-  width: 300px;
-}
-input[type="email"] {
-  height: 30px;
-  width: 300px;
-}
-input[type="password"] {
-  height: 30px;
-  width: 300px;
-}
-input::placeholder {
-  padding: 10px;
-}
-.social-icons {
-  display: flex;
-  flex-direction: column;
-}
-.social-icons .fa {
-  font-size: 30px;
-}
-
 /*Login Page*/
-.login-container {
-  width: 700px;
-  border: 1px solid;
-  display: grid;
-  grid-template-columns: 350px 350px;
-  margin-left: 650px;
-  margin-top: 200px;
+
+main.login-page{
+    font-family: var(--primaryFont);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-.login-form {
-  row-gap: 20px;
-  display: flex;
-  flex-direction: column;
+
+.login-container{
+    border: 1px solid black;
+    width: 50%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.login-form h2 {
-  margin-left: 100px;
-  margin-top: 10px;
-  font-size: 40px;
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 0px;
 }
-.bottom {
-  margin-top: -150px;
+
+p.login-signup-title{
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+form.login-form{
+    width: 89%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-inner input{
+    padding: 10px 10px;
+}
+
+.login-form button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--primaryCol);
+}
+
+.login-form button a{
+    color: var(--mainCol);
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.login-form button:hover{
+    background-color: #d2ac4a;
+    cursor: pointer;
+}
+
+p.forget-password{
+    color: #b7b7b7;
+    align-self: flex-end;
+}
+
+.google-anchor img{
+    width: 30px;
+    height: 30px;
+}
+
+.facebook-anchor i{
+    font-size: 32px;
+    color: rgb(52, 103, 155);
+}
+
+.google-anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--primaryCol);
+}
+
+.logo-description img{
+    width: 55%;
+    height: 40%;
+}
+
+.login-page-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p.login-text-info{
+    font-size: 16px;
+    color: #1F4A42;
+}
+
+button.to-sign-up{
+    background-color: var(--mainCol);
+    color: var(--primaryCol);
+    font-weight: bold;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+}
+
+button.to-sign-up:hover{
+    background-color: #1a3d37;
+    cursor: pointer;
+}
+
+.signup-container{
+    border: 1px solid black;
+    width: 50%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--primaryFont);
 }
 
 /* Payment-Content */
@@ -261,6 +326,103 @@ input::placeholder {
 }
 
 /*Home Page*/
+main.landing-page{
+    font-family: var(--primaryFont);
+}
+
+.advertisement-banner{
+    width: 100%;
+    height: 35%;
+    overflow: hidden;
+}
+
+.advertisement-banner img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.landing-content{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newArrival-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.items-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.items-container figure img{
+    width: 100%;
+    height: 70%;
+    /* object-fit: contain; */
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+}
+
+.items-container figure{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    height: max-content;
+}
+
+.items-container figcaption{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+p.home-page-product-price{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+p.home-page-product-name{
+    font-size: 1.2em;
+}
+
+p.landing-label{
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: var(--mainFont);
+}
+
+.discount{
+    background-color: red;
+    padding: 5px;
+    width: max-content;
+    color: white;
+    position: absolute;
+}
+
+.dis1{
+    left: 20.35%;
+}
+
+.dis2{
+    left: 45.05%;
+}
+
+.dis3{
+    left: 69.7%;
+}
+
+.dis4{
+    left: 94.35%;
+}
 
 .new-items {
   display: grid;
@@ -278,6 +440,8 @@ input::placeholder {
 }
 
 
+
+
 :root{
     --mainFont: Inria-Serif;
     --primaryFont: Inter;
@@ -293,12 +457,8 @@ input::placeholder {
     padding: 0px;
 }
 body{
-    height: 100vh;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .advertise-text-run{
     background-color: var(--primaryCol);

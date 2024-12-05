@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="HTML, CSS, Fashion Vista, clothing, fashion, men wear, women wear, kids clothing, online store"
-    />
-    <meta
-      name="description"
-      content="ecommerce website, selling clothes, Discover trendy, high-quality clothing for men, women, and kids at Fashion Vista. Shop the latest styles with fast delivery and affordable prices."
-    />
+      content="HTML, CSS, Fashion Vista, clothing, fashion, men wear, women wear, kids clothing, online store"/>
+    <meta name="description" content="ecommerce website, selling clothes, Discover trendy, high-quality clothing for men, women, and kids at Fashion Vista. Shop the latest styles with fast delivery and affordable prices."/>
     <meta name="author" content="Leang Chhay, Punleu, Rath, Mey" />
     <link rel="icon" type="image/x-icon" href="Images/FVLogo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,82 +34,41 @@
     <title>Fashion Vista</title>
   </head>
   <body>
-    <div class="signUp-container">
-      <div class="logo-description">
-        <img
-          src="./Images/FVLogo.png"
-          alt="Logo"
-          style="margin-bottom: 30px; margin-top: -80px"
-        />
-        <div class="bottom">
-          <label for="login-btn">
-            <p style="color: #1f4a42; margin-bottom: 15px; margin-left: 4px">
-              Already have account?
-            </p>
-            <input
-              type="submit"
-              value="Log in"
-              onclick="window.location.href='./login.html';"
-              style="
-                width: 150px;
-                height: 35px;
-                font-size: 22px;
-                cursor: pointer;
-              "
-              id="login-btn"
-            />
-          </label>
+    <main class="login-page">
+        <div class="signup-container">
+          <div class="logo-description">
+            <img src="Images/FVLogo.png" alt="Logo" class="login-page-logo"/>
+            <div class="login-page-bottom">
+              <p class="login-text-info">Already have account?</p>
+                <button onclick="window.location.href='index.html';" class="to-sign-up">Sign In</button>
+            </div>
+          </div>
+          <div class="login-left">
+            <p class="login-signup-title">SIGN UP</p>
+            <form class="login-form">
+              <div class="login-inner">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Type your Username"/>
+              </div>
+              <div class="login-inner">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Type your Email"/>
+              </div>
+              <div class="login-inner">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Type Your Email"/>
+              </div>
+              <p class="forget-password">Forget Password?</p>
+              <button type="submit"><a href="home.html">Sign Up</a></button>
+            </form>
+            <p>Or Sign Up with</p>
+            <div class="social-icons">
+              <a href="#" class="google-anchor"><img src="Images/google.png" alt=""></a>
+              <a href="#" class="facebook-anchor"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="signUp-form">
-        <h2>SIGN UP</h2>
-        <label for="username">
-          <p>Username</p>
-          <input type="text" placeholder="Type your username" id="username" />
-          <br />
-        </label>
-        <label for="email"
-          ><p>Email</p>
-          <input type="email" id="email" placeholder="Type Your Email" />
-        </label>
-        <label for="password">
-          <p>Password</p>
-          <input type="password" placeholder="Type your password" />
-        </label>
-        <label for="signUp-btn">
-          <input
-            type="submit"
-            value="SIGN UP"
-            onclick="window.location.href='./home.html';"
-            style="
-              width: 305px;
-              height: 40px;
-              background: #f2d07d;
-              border: 0px;
-              font-weight: bold;
-              font-size: 20px;
-              cursor: pointer;
-              margin-top: 20px;
-              color: #1f4a42;
-            "
-          />
-        </label>
-        <p style="color: #8f8f90; margin-left: 100px">Or Sign Up with</p>
-        <div class="social-icons">
-          <br />
-          <a
-            href="#"
-            class="fa fa-google"
-            style="margin-left: 110px; margin-top: -10px"
-          ></a>
-          <a
-            href="#"
-            class="fa fa-facebook"
-            style="margin-left: 160px; margin-top: -30px; width: 30px"
-          ></a>
-          <br />
-        </div>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
+

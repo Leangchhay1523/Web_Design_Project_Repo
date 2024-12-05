@@ -16,6 +16,7 @@ header {
   font-family: var(--primaryFont);
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 .upper-header {
@@ -41,10 +42,6 @@ section.breadcrumb-container a {
   font-family: var(--mainFont);
   font-size: 2em;
   font-weight: bold;
-}
-
-main {
-  padding: 10px;
 }
 
 a:hover,
@@ -166,7 +163,6 @@ nav a:hover {
 .image-size{
     width: 220px;
     height:350px;
-    
 }
 
 .slider-wrapper{
