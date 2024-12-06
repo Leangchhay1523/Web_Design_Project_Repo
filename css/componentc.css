@@ -334,7 +334,6 @@ footer form input[type="submit"]:active{
 }
 
 /* Main */
-
 .product-items{
     display: flex;
     flex-direction: column;
