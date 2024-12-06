@@ -20,8 +20,9 @@ footer{
   grid-template-columns: 2fr 1fr;
   height: 850px;
   justify-content: center;
-  margin-top: -15px;
+  margin-top: 20px;
   margin-left: 400px;
+  font-family: var(--primaryFont);
 }
 .payment-content h2 {
   margin-left: 260px;
