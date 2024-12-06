@@ -162,7 +162,7 @@ hr{
     cursor: pointer;
 }
 
-button:hover{
+.button-pay:hover{
     background-color: #45a049;
 }
 <<<<<<< HEAD
