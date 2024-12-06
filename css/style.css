@@ -213,6 +213,8 @@ main.landing-page{
     gap: 10px;
 }
 
+
+
 .items-container{
     display: flex;
     justify-content: space-between;
