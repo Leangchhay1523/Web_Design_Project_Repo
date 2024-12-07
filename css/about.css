@@ -1,0 +1,140 @@
+:root{
+    --mainFont: Inria-Serif;
+    --primaryFont: Inter;
+    --mainCol: #1F4A42;
+    --primaryCol: #F2D07D;
+    --lightGray: #F3F3F3;
+    --Gray: #87888B;
+    --dark: #3E3F42;
+}
+/* General Style */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main : About Us */
+
+main.about-us-page{
+    font-family: var(--primaryFont);
+    padding: 10px 30px;
+    overflow: auto;
+}
+
+.about-us-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+span.about-us-title{
+    font-family: var(--mainFont);
+}
+
+.about-us-label{
+    font-size: 26px;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.about-us-inner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.about-us-collection-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-collection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: var(--mainFont);
+    width: 35%;
+}
+
+span.about-us-description-logo{
+    font-weight: bold;
+}
+
+.collection-left{
+    align-self: flex-start;
+}
+
+.collection-right{
+    align-self: flex-end;
+}
+
+img.collection-img{
+    width: 50%;
+    height: 100%;
+}
+
+.about-us-inner-container ul{
+    margin-left: 1.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-us-team-container{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    flex-wrap: wrap;
+}
+
+.about-us-team{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+}
+
+.about-us-team img{
+    width: 100%;
+    height: 80%;
+}
+
+.about-us-team .social-container{
+    display: flex;
+    gap: 20px;
+}
+
+.about-us-team .social-container a i{
+    font-size: 25px;
+}
+
+.social-container a{
+    transition: transform 0.2s ease;
+}
+
+.social-container a:hover{
+    transform: scale(1.2);
+}
+
+.about-us-team p.name{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+.about-us-team-description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
