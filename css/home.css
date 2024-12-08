@@ -124,8 +124,14 @@ p.landing-label{
 }
 
 @keyframes infiniteScroll {
-    from {transform: translateX(0)}
-    to {transform: translateX(-20%)}
+    /* from {transform: translateX(0)}
+    to {transform: translateX(-100%)} */
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+      }
+      100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+      }
   }
   .advertise-text-run {
     width: 100%;
@@ -136,7 +142,7 @@ p.landing-label{
     font-size: 1.1em;
     width: 2600px;
     animation-name: infiniteScroll;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
