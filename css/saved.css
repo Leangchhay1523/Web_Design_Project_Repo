@@ -7,15 +7,6 @@
     --Gray: #87888B;
     --dark: #3E3F42;
 }
-/* General Style */
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-}
 
 /* Main : Save Page */
 main.save-page{
