@@ -70,6 +70,10 @@ main.landing-page{
     gap: 5px;
 }
 
+.figure-discount{
+    position: relative;
+}
+
 p.home-page-product-price{
     font-weight: bold;
     font-size: 1.3em;
@@ -90,9 +94,11 @@ p.landing-label{
     width: max-content;
     color: white;
     position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
-.dis1{
+/* .dis1{
     left: 20.35%;
 }
 
@@ -106,7 +112,7 @@ p.landing-label{
 
 .dis4{
     left: 94.35%;
-}
+} */
 
 .new-items {
   display: grid;

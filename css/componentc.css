@@ -39,6 +39,7 @@ header{
     font-family: var(--primaryFont);
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 a:hover,
@@ -377,7 +378,7 @@ p.slogan, .footer-nav li{
 {
     .links-container{
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
     }
 }
 
