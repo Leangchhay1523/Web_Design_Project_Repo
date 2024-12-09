@@ -12,6 +12,8 @@
 main.landing-page{
     font-family: var(--primaryFont);
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .advertisement-banner{
@@ -97,22 +99,6 @@ p.landing-label{
     top: 0px;
     right: 0px;
 }
-
-/* .dis1{
-    left: 20.35%;
-}
-
-.dis2{
-    left: 45.05%;
-}
-
-.dis3{
-    left: 69.7%;
-}
-
-.dis4{
-    left: 94.35%;
-} */
 
 .new-items {
   display: grid;

@@ -14,6 +14,8 @@ main.about-us-page{
     font-family: var(--primaryFont);
     padding: 10px 30px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-us-title{
@@ -129,3 +131,96 @@ img.collection-img{
     gap: 10px;
     align-items: center;
 }
+
+
+.value-proposition-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    height: max-content; 
+    margin: 30px 0px;
+    padding: 30px 50px;
+    flex-wrap: wrap;
+}
+
+
+.value-proposition-items i{
+    color: var(--mainCol);
+    font-size: 5em;
+}
+
+p.value-propos-label{
+    font-family: var(--mainFont);
+    font-size: 1.8em;
+    color: var(--dark);
+    font-weight: bold;
+    text-align: center;
+}
+
+p.value-propos-description{
+    font-size: 1.2em;
+    color: var(--dark);
+    text-align: center;
+}
+
+.value-proposition-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1100px)
+{
+    .value-proposition-container{
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 10px;
+    }
+
+    p.value-propos-label{
+        font-size: 1.6em;
+    }
+
+    
+    .value-proposition-items i{
+        font-size: 4em;
+    }
+
+    p.value-propos-description{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 910px)
+{
+    .value-proposition-container{
+        grid-template-columns: 1fr;
+        gap: 3em;
+    }
+
+    p.value-propos-label{
+        font-size: 1.8em;
+    }
+
+    
+    .value-proposition-items i{
+        font-size: 5em;
+    }
+
+    p.value-propos-description{
+        font-size: 1.2em;
+    }
+}
+
+/* @media screen and (max-width: 590px)
+{
+    .value-proposition-container{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
