@@ -40,7 +40,47 @@ main.landing-page{
     gap: 10px;
 }
 
+.home-shop-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    gap: 30px;
+}
 
+.home-shop-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-shop-items{
+    position: relative;
+}
+
+a.home-shop-link{
+    position: absolute;
+    background-color: var(--primaryCol);
+    color: var(--mainCol);
+    width: 150px;
+    padding: 10px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a.home-shop-link:hover{
+    background-color: #dabc70;
+}
+
+a.home-shop-link:active{
+    background-color: #c4a966;
+}
 
 .items-container{
     display: grid;
@@ -116,14 +156,12 @@ p.landing-label{
 }
 
 @keyframes infiniteScroll {
-    /* from {transform: translateX(0)}
-    to {transform: translateX(-100%)} */
     0% {
-        transform: translateX(100%); /* Start off-screen to the right */
+        transform: translateX(100%); 
       }
-      100% {
-        transform: translateX(-100%); /* End off-screen to the left */
-      }
+    100% {
+    transform: translateX(-100%); 
+    }
   }
   .advertise-text-run {
     width: 100%;
@@ -156,14 +194,22 @@ p.landing-label{
 @media screen and (max-width: 768px)
 {
     .items-container{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-shop-container{
+        grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width: 480px)
 {
     .landing-content{
-        padding: 10px 10px;
+        padding: 10px 20px;
+    }
+    
+    p.landing-label{
+        font-size: 1.5em;
     }
 
     .items-container{

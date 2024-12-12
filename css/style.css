@@ -9,20 +9,6 @@
   --dark: #3E3F42;
 }
 
-/* General Style */
-*{
-  margin: 0px;
-  padding: 0px;
-}
-body{
-  margin: 0px;
-  padding: 0px;
-  width: 100vw;
-}
-html{
-  width: 100vw;
-}
-
 .advertise-text-run {
   background-color: var(--primaryCol);
   display: flex;

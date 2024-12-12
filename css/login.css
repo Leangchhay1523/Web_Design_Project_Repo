@@ -1,133 +1,154 @@
-:root{
+:root {
     --mainFont: Inria-Serif;
     --primaryFont: Inter;
-    --mainCol: #1F4A42;
-    --primaryCol: #F2D07D;
-    --lightGray: #F3F3F3;
-    --Gray: #87888B;
-    --dark: #3E3F42;
-}
-
-/*Login Page*/
-main.login-page{
+    --mainCol: #1f4a42;
+    --primaryCol: #f2d07d;
+    --lightGray: #f3f3f3;
+    --Gray: #87888b;
+    --dark: #3e3f42;
+  }
+  
+  /*Login Page*/
+  main.login-page {
     font-family: var(--primaryFont);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
+  }
 
-.login-container{
+  .signUp-btn{
+    display: none;
+  }
+  
+  .login-container {
     border: 1px solid black;
     width: 50%;
-    height: 60vh;
+    height: max-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+  }
+  
+  .login-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
 
-.login-left{
+  .login-header img{
+    width: 100px;
+    height: 100px;
+    display: none;
+  }
+  
+  .login-left {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     padding: 20px 0px;
-}
-
-p.login-signup-title{
+  }
+  
+  p.login-signup-title {
     font-weight: bold;
     font-size: 1.8em;
-}
-
-.login-form{
-    width: 89%;
+  }
+  
+  .login-form {
+    width: 100%;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.login-inner{
+  }
+  
+  .login-inner {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.login-inner input{
+  }
+  
+  .login-inner input {
     padding: 10px 10px;
-}
-
-.login-form button{
+    width: 100%;
+  }
+  
+  .login-form button {
     width: 100%;
     outline: none;
     border: none;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primaryCol);
-}
-
-.login-form button a{
+  }
+  
+  .login-form button a {
     color: var(--mainCol);
     font-size: 1.7em;
     font-weight: bold;
-}
-
-.login-form button:hover{
+  }
+  
+  .login-form button:hover {
     background-color: #d2ac4a;
     cursor: pointer;
-}
-
-p.forget-password{
+  }
+  
+  p.forget-password {
     color: #b7b7b7;
     align-self: flex-end;
-}
-
-.google-anchor img{
+  }
+  
+  .google-anchor img {
     width: 30px;
     height: 30px;
-}
-
-.facebook-anchor i{
+  }
+  
+  .facebook-anchor i {
     font-size: 32px;
     color: rgb(52, 103, 155);
-}
-
-.google-anchor{
+  }
+  
+  .google-anchor {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.social-icons{
+  }
+  
+  .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.logo-description{
+  }
+  
+  .logo-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     background-color: var(--primaryCol);
-}
-
-.logo-description img{
+  }
+  
+  .logo-description img {
     width: 55%;
     height: 40%;
-}
-
-.login-page-bottom{
+  }
+  
+  .login-page-bottom {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-p.login-text-info{
+  }
+  
+  p.login-text-info {
     font-size: 16px;
-    color: #1F4A42;
-}
-
-button.to-sign-up{
+    color: #1f4a42;
+  }
+  
+  button.to-sign-up {
     background-color: var(--mainCol);
     color: var(--primaryCol);
     font-weight: bold;
@@ -135,18 +156,48 @@ button.to-sign-up{
     border: none;
     outline: none;
     font-size: 1.2em;
-}
-
-button.to-sign-up:hover{
+  }
+  
+  button.to-sign-up:hover {
     background-color: #1a3d37;
     cursor: pointer;
-}
-
-.signup-container{
+  }
+  
+  .signup-container {
     border: 1px solid black;
     width: 50%;
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: var(--primaryFont);
-}
+  }
+  
+ @media screen and (max-width: 1075px)
+ {
+  .login-container{
+    width: 70%;
+  }
+ }
+
+ @media screen and (max-width: 800px)
+ {
+  .login-container{
+    width: 80%;
+  }
+ }
+
+ @media screen and (max-width: 700px)
+ {
+  .login-container{
+    grid-template-columns: 1fr;
+  }
+  .logo-description{
+    display: none;
+  }
+  .login-header img{
+    display: block;
+  }
+  .signUp-btn{
+    display: block;
+  }
+ }

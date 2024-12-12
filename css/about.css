@@ -16,6 +16,7 @@ main.about-us-page{
     overflow: auto;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .about-us-title{
@@ -38,22 +39,18 @@ span.about-us-title{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
 }
 
 .about-us-collection-container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .about-us-collection{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     align-items: center;
     text-align: center;
     font-family: var(--mainFont);
-    width: 35%;
 }
 
 span.about-us-description-logo{
@@ -64,27 +61,39 @@ span.about-us-description-logo{
     align-self: flex-start;
 }
 
+
+p.collection-left{
+    align-self: center;
+}
+
 .collection-right{
     align-self: flex-end;
 }
 
-img.collection-img{
-    width: 50%;
-    height: 100%;
+p.collection-right{
+    align-self: center;
 }
 
+
+img.collection-img{
+    width: 100%;
+    height: 100%;  
+    object-fit: contain;
+}
+
+
 .about-us-inner-container ul{
-    margin-left: 1.5%;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .about-us-team-container{
-    display: flex;
-    justify-content: space-between;
-    height: 60vh;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow: hidden;
 }
 
 .about-us-team{
@@ -93,13 +102,13 @@ img.collection-img{
     gap: 10px;
     background-color: white;
     align-items: center;
-    width: 200px;
-    height: 100%;
 }
 
 .about-us-team img{
     width: 100%;
     height: 80%;
+    object-fit: cover;
+    border: 1px solid black;
 }
 
 .about-us-team .social-container{
@@ -108,7 +117,7 @@ img.collection-img{
 }
 
 .about-us-team .social-container a i{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .social-container a{
@@ -138,16 +147,16 @@ img.collection-img{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     width: 100%;
+    gap: 20px;
     height: max-content; 
     margin: 30px 0px;
     padding: 30px 30px;
     flex-wrap: wrap;
-    border: 1px solid black;
 }
 
 
 .value-proposition-items i{
-    color: var(--mainCol);
+    color: var(--dark);
     font-size: 5em;
 }
 
@@ -200,5 +209,55 @@ p.value-propos-description{
 
     p.value-propos-description{
         font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 905px)
+{
+    .about-us-team-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about-us-team p.name{
+        font-size: 1.3em;
+    }
+
+    .about-us-team .social-container a i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 728px)
+{
+    .about-us-collection-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 503px)
+{
+    .about-us-team-container{
+        grid-template-columns: 1fr;
+    }
+
+    main.about-us-page{
+        padding: 10px 15px;
+    }
+
+    .about-us-team p.name{
+        font-size: 2em;
+    }
+
+    .about-us-team .social-container a i{
+        font-size: 50px;
+    }
+
+    .about-us-team{
+        margin-top: -20px;
+    }
+
+    .about-us-team:first-child{
+        margin-top: 0px;
     }
 }

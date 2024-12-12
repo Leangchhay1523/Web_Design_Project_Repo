@@ -12,18 +12,30 @@
 main.product-detail-page{
     padding: 30px 30px;
     font-family: var(--primaryFont);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 0.9fr 1.5fr;
+    grid-template-rows: 550px 1fr;
     gap: 20px;
 }
+
+.size-container{
+    transition: transform 0.3s ease;
+}
+
+.size-container:hover{
+    transform: scale(1.1);
+}
+
 .product-detail-img{
-    width: 30%;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
 }
 
 .product-detail-img img{
     width: 100%;
     height: 100%;
+    max-width: 100%;
 }
 
 .upper-detail-container{
@@ -74,8 +86,8 @@ p.product-detail-description-label{
     justify-content: center;
     align-items: center;
     font-family: var(--mainFont);
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 45px;
     border: 2px solid black;
     padding: 10px;
 }
@@ -105,8 +117,8 @@ p.product-detail-description-label{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 10%;
+    width: 150px;
+    height: 50px;
     font-size: 1.2em;
 }
 
@@ -123,7 +135,7 @@ p.product-detail-description-label{
 }
 
 .product-detail-img-container {
-    width: 30%; /* This is fine */
+    width: 100%; /* This is fine */
     height: 100%; /* Make it fill the parent's height */
     display: flex;
     flex-direction: column;
@@ -139,7 +151,7 @@ p.product-detail-description-label{
 .upper-product-img-container{
     display: flex;
     gap: 20px;
-    height: calc((100% - 30px) / 2);
+    height: calc((80% - 30px) / 2);
 }
 
 img.product-detail-small-img{
@@ -171,7 +183,7 @@ img.product-detail-big-img{
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 
 p.size-chart-title{
@@ -184,10 +196,6 @@ p.size-chart-title{
     gap: 30px;
 }
 
-.size-chart-description{
-    flex-grow: 1;
-}
-
 .size-chart-side-nav{
     display: flex;
     flex-direction: column;
@@ -197,6 +205,11 @@ p.size-chart-title{
 .size-chart-description{
     display: grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
+    flex-grow: 1;
+}
+
+.down-size{
+    justify-content: flex-end;
 }
 
 .bg-black{
@@ -217,4 +230,113 @@ p.size-chart-title{
 
 .size-value{
     font-size: 2em;
+}
+
+@media screen and (max-width: 948px)
+{
+    p.size-label{
+        font-size: 1.3em;
+    }
+
+    p.size-value{
+        font-size: 1.7em;
+    }
+
+    p.product-detail-name{
+        font-size: 40px;
+    }
+
+    p.product-detail-price{
+        font-size: 40px;
+    }
+
+    main.product-detail-page{
+        grid-template-rows: 470px 1fr;
+    }
+
+    .size-container{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 853px)
+{
+    main.product-detail-page{
+        grid-template-columns: 1.2fr 1.5fr;
+    }
+
+    p.size-label{
+        font-size: 1.1em;
+    }
+
+    p.size-value{
+        font-size: 1.5em;
+    }
+
+    .size-chart-description{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    main.product-detail-page{
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px 400px max-content max-content;
+    }
+
+    .size-chart-container{
+        margin-top: -20%;
+    }
+
+    p.size-label{
+        font-size: 1.5em;
+    }
+
+    p.size-value{
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (max-width: 615px)
+{
+    .size-chart-description{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 490px)
+{
+    p.product-detail-name{
+        font-size: 36px;
+    }
+
+    p.product-detail-price{
+        font-size: 36px;
+    }
+
+    main.product-detail-page{
+        grid-template-rows: 470px 1fr;
+    }
+
+    .product-detail-description{
+        gap: 20px;
+    }
+
+    main.product-detail-page{
+        padding: 20px 15px;
+    }
+
+    p.size-label{
+        font-size: 1.5em;
+    }
+
+    p.size-value{
+        font-size: 1.9em;
+    }
+
+    .size-items{
+        gap: 5px;
+    }
 }
