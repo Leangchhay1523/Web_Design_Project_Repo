@@ -54,7 +54,7 @@ main.cart-page{
     display: flex;
     justify-content: space-between;
     font-size: 1.2em;
-    padding: 0px 20px 0px 0px;
+    font-weight: bold;
   }
   hr.line-product{
     border: 1px solid #D6D6D6;
@@ -74,7 +74,9 @@ main.cart-page{
       gap: 5px;
       width: max-content;
   }
-  
+  .remove-container i{
+    display: inline;
+  }
   .quantity-control div{
     width: 10px;
     display: flex;
