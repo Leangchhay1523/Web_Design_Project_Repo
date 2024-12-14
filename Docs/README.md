@@ -35,14 +35,21 @@ ecommerce-website/
 ├── singup.html        # Create Account Page
 │
 ├── css/               # CSS files
-│   ├── styles.css     # Main CSS file for the website
-│   └── components.css # Optional: Styles for reusable components
-│
+│   ├── about.css      # Styles for about page
+│   ├── login.css      # Styles for Login page and Sign Up Page
+│   ├── home.css       # Styles for home page
+│   ├── cart.css       # Styles for cart page
+│   ├── contact.css    # Styles for contact page
+│   ├── payment.css    # Styles for payment page
+│   ├── product.css    # Styles for product detail page
+│   ├── saved.css      # Styles for save page
+│   └── components.css # Styles for html files that need the same styles
+|
 ├── images/            # Image assets
 │   
 │
-└── docs/              # Documentation and planning
-    └── README.md      # Project overview or guidelines
+└── docs/              
+    └── README.md      # Project Description
 ```
 
 ## Technologies Used
@@ -60,10 +67,13 @@ Figma : For Designing UX/UI
 
 #### Free Pictures
 1. Freepik
-2. PixaBay
-3. Colors
-4. Color Space
+2. PixaBay 
+3. Pinteres
 
 #### Design Inspiration
 1. Dribble
-2. ColorFinder : Color Finding from Image 
+
+#### Color
+1. ColorFinder : Color Finding from Image
+2. Colors
+3. Color Space
